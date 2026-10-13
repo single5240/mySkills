@@ -19,3 +19,4 @@
 | :--- | :--- | :--- |
 | [`embedded-six-stage-workflow`](./embedded-six-stage-workflow/SKILL.md) | `global` | 嵌入式固件研发六阶段门禁工作流（Brainstorm → Design → Plan → Execute → Verify → Ship）与中断/DMA/看门狗/Flash 高风险改动安全检查清单 |
 | [`answer-me-with-html`](./answer-me-with-html/SKILL.md) | `global` | 借助 `am.mjs` 将复杂架构、通信协议时序、状态机或方案对比渲染为单页交互式 HTML 图解看板或解说视频 |
+| [`clash-tun-antigravity`](./clash-tun-antigravity/SKILL.md) | `project` | Clash Verge 的 AI-Code 前置分流（反重力 / Cursor / Codex / Copilot），以及用 TUN 加规则模式修复反重力直连 Google 超时 |
