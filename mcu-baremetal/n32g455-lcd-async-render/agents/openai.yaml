@@ -1,0 +1,6 @@
+interface:
+  display_name: "N32G455 LCD 异步绘制"
+  short_description: "实现并验证 LCD DMA 渐进刷新"
+  default_prompt: "使用 $n32g455-lcd-async-render 将当前 N32G455 工程的 LCD 页面绘制改为 DMA 异步渐进完成，并保持既有 DMA 分配。"
+policy:
+  allow_implicit_invocation: true

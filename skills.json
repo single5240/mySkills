@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "path": "common",
+      "exclude": ["exp-.*"]
+    },
+    {
+      "path": "mcu-baremetal",
+      "exclude": ["exp-.*"]
+    },
+    {
+      "path": "rtos",
+      "exclude": ["exp-.*"]
+    },
+    {
+      "path": "linux-driver",
+      "exclude": ["exp-.*"]
+    },
+    {
+      "path": "protocols-debug",
+      "exclude": ["exp-.*"]
+    }
+  ]
+}

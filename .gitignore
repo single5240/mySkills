@@ -1,0 +1,15 @@
+# OS & Editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Temporary & scratch files
+*.tmp
+*.log
+*.bak
+__pycache__/
+*.py[cod]
+node_modules/
