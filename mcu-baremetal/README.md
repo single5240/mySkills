@@ -20,3 +20,7 @@
 | :--- | :--- | :--- | :--- |
 | [`embedded-bitmap-fonts`](./embedded-bitmap-fonts/SKILL.md) | `global` | All MCU (ARMCC/Keil/GCC) | 嵌入式 LCD/OLED/TFT 点阵字库诊断、子集裁剪与生成（支持中文 BDF 点阵、基线防裁剪、RGB565 条带局部渲染、ARMCC5 UTF-8 字符串转义） |
 | [`n32g455-lcd-async-render`](./n32g455-lcd-async-render/SKILL.md) | `vendor` | Nationstech N32G455 (Cortex-M4) | 将 N32G455 上的 ST7789 等 SPI LCD 页面绘制改为 DMA 异步条带渐进刷新，并在不干扰 AD7190 高优先级采集 DMA 的前提下完成 Keil 验证 |
+| [`nor-flash-powerfail-record-store`](./nor-flash-powerfail-record-store/SKILL.md) | `global` | All MCU + SPI NOR Flash (W25Q128) | 外部 NOR Flash 掉电安全 64B 定长记录存储、两阶段提交、单条原位墓碑删除、3 扇区世代控制环、稀疏扇区非阻塞迁移与断电续作 |
+| [`eeprom-dual-slot-param-store`](./eeprom-dual-slot-param-store/SKILL.md) | `global` | All MCU + I2C EEPROM (M24C02) | I2C EEPROM A/B 双槽乒乓掉电安全参数镜像、16B 页边界切分、tWR ACK 轮询及传感器大小量程双层 25 细段线性插值标定 |
+| [`ad7190-exti-spi-dma-acquisition`](./ad7190-exti-spi-dma-acquisition/SKILL.md) | `vendor` | ADI AD7190/AD7192 + Cortex-M | AD7190 24-bit Σ-Δ ADC 的 DOUT/RDY 引脚 EXTI+SPI MISO 双模无竞态切换、SPI DMA 连续采样、256 槽环形队列与 40-bit 软复位自愈 |
+| [`baremetal-table-fsm-and-scheduler`](./baremetal-table-fsm-and-scheduler/SKILL.md) | `global` | All MCU (C99 Bare-Metal) | 零动态内存表驱动有限状态机（含初始化自检与空闲循环事件）、主循环 1ms/10ms/100ms/空闲分片四级协作调度、静态事件总线与 UI 页面契约 |

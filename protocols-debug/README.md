@@ -20,4 +20,4 @@
 
 | Skill 目录名 | 使用范围 (Scope) | 协议 / 调试工具 | 简述 |
 | :--- | :--- | :--- | :--- |
-| *(待添加)* | `global` / `vendor` | CAN / Modbus / GDB / HardFault | 将新技能置于 `protocols-debug/<skill-name>/SKILL.md` 并在此登记 |
+| [`jlink-rtt-cli-hil-validation`](./jlink-rtt-cli-hil-validation/SKILL.md) | `global` | J-Link SEGGER RTT / Cortex-M DWT | 零串口占用的 J-Link RTT 表驱动交互式 CLI、DWT 主循环单圈耗时与栈水位探针，以及宏隔离的非阻塞板级故障注入与断电恢复自动化验收 |
