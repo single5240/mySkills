@@ -24,3 +24,5 @@
 | [`eeprom-dual-slot-param-store`](./eeprom-dual-slot-param-store/SKILL.md) | `global` | All MCU + I2C EEPROM (M24C02) | I2C EEPROM A/B 双槽乒乓掉电安全参数镜像、16B 页边界切分、tWR ACK 轮询及传感器大小量程双层 25 细段线性插值标定 |
 | [`ad7190-exti-spi-dma-acquisition`](./ad7190-exti-spi-dma-acquisition/SKILL.md) | `vendor` | ADI AD7190/AD7192 + Cortex-M | AD7190 24-bit Σ-Δ ADC 的 DOUT/RDY 引脚 EXTI+SPI MISO 双模无竞态切换、SPI DMA 连续采样、256 槽环形队列与 40-bit 软复位自愈 |
 | [`baremetal-table-fsm-and-scheduler`](./baremetal-table-fsm-and-scheduler/SKILL.md) | `global` | All MCU (C99 Bare-Metal) | 零动态内存表驱动有限状态机（含初始化自检与空闲循环事件）、主循环 1ms/10ms/100ms/空闲分片四级协作调度、静态事件总线与 UI 页面契约 |
+| [`mcu-flash-param-storage`](./mcu-flash-param-storage/SKILL.md) | `global` | All MCU (Internal Flash) | 单片机片内 Flash 双页乒乓掉电安全参数存储、页内定长槽追加磨损均衡、同 Bank 擦写 CPU 取指停顿（Stall）中断保护与链接脚本隔离 |
+| [`baremetal-menu-ui-architecture`](./baremetal-menu-ui-architecture/SKILL.md) | `global` | All MCU (LCD/OLED Key UI) | 裸机按键长按跨页防误触锁存、驻留 Flash 的表驱动菜单引擎 (`MenuItem`)、条带渲染帧快照 (`PageSnapshot` 防撕裂) 与多语言固定边界裁剪 |

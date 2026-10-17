@@ -21,3 +21,5 @@
 | Skill 目录名 | 使用范围 (Scope) | 协议 / 调试工具 | 简述 |
 | :--- | :--- | :--- | :--- |
 | [`jlink-rtt-cli-hil-validation`](./jlink-rtt-cli-hil-validation/SKILL.md) | `global` | J-Link SEGGER RTT / Cortex-M DWT | 零串口占用的 J-Link RTT 表驱动交互式 CLI、DWT 主循环单圈耗时与栈水位探针，以及宏隔离的非阻塞板级故障注入与断电恢复自动化验收 |
+| [`serial-dma-frame-parser`](./serial-dma-frame-parser/SKILL.md) | `global` | UART / RS-485 / DMX512 / Modbus | 串口 `IDLE + DMA Circular` 无锁环形接收、带帧内超时的状态机拆包、DMX512 短帧安全发布与半双工 RS-485 `TC` 标志方向切换时序 |
+| [`cortex-m-hardfault-map-decoder`](./cortex-m-hardfault-map-decoder/SKILL.md) | `global` | ARM Cortex-M / Keil `.map` / `fromelf` | Cortex-M `HardFault` 裸汇编栈帧 (`MSP/PSP PC/LR`) 提取、`SCB->CFSR/HFSR/BFAR/MMFAR` 故障位域解码与 `.map` / 反汇编源码定位 |
