@@ -18,6 +18,7 @@
 | Skill 目录名 | 使用范围 (Scope) | 简述 |
 | :--- | :--- | :--- |
 | [`embedded-six-stage-workflow`](./embedded-six-stage-workflow/SKILL.md) | `global` | 嵌入式固件研发六阶段门禁工作流（Brainstorm → Design → Plan → Execute → Verify → Ship）与中断/DMA/看门狗/Flash 高风险改动安全检查清单 |
+| [`agents-md-quality-constraints`](./agents-md-quality-constraints/SKILL.md) | `global` | 按“质量约束优先于过程编排”审查/精简 AGENTS.md：可机检规则迁移为脚本门禁，保留不变量、风险升级与验证入口表；附原文与作者 AGENTS.md 模板 |
 | [`keil-armcc-build-analyzer`](./keil-armcc-build-analyzer/SKILL.md) | `global` | Keil MDK (`UV4.exe` / ARMCC 5) 命令行无头构建、`.build_log.htm` 警告分类审查与 `.map` 资源占用 (`Code/RO/RW/ZI`) 自动对比分析 |
 | [`embedded-lcd-web-simulator`](./embedded-lcd-web-simulator/SKILL.md) | `global` | 将嵌入式 LCD/OLED 固件的 C 点阵字库 (`font_*.c`)、RGB565 界面、实体键短/长按与测量/校准状态机 1:1 复刻为免服务器纯前端互动演示网页 |
 | [`answer-me-with-html`](./answer-me-with-html/SKILL.md) | `global` | 借助 `am.mjs` 将复杂架构、通信协议时序、状态机或方案对比渲染为单页交互式 HTML 图解看板或解说视频 |
