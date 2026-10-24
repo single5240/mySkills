@@ -29,6 +29,7 @@ description: >-
 
 - [测试设计](./references/test-design.md)：状态转移、虚拟时间、故障注入、双端联合、存储模型和可信度检查。
 - [验证边界](./references/validation-boundaries.md)：主机与目标差异、ISR／DMA／RTOS 的覆盖限制、结果交付格式。
+- [报告编写与归档](./references/test-reporting.md)：交付或用户要求报告时读取，说明标准参考、状态口径、自动事实与人工结论；按需复制 [报告模板](./assets/test-report-template.md)。
 - [状态机示例](./examples/state-machine/test_session.c)：实际模块与测试分开编译，检查超时边界与 uint32_t 回绕。
 - [双端协议示例](./examples/paired-protocol/test_link.c)：独立已知帧、丢包、旧轮次、重复保存与单端保存不等于双端成功。
 
@@ -52,12 +53,14 @@ python scripts/run_examples.py --cc /absolute/path/to/compiler
 python scripts/run_examples.py --cc /absolute/path/to/compiler --negative-checks
 ```
 
-从本技能目录运行，或使用脚本绝对路径；脚本按自身位置查找示例。支持常见 GCC／Clang／TinyCC 命令形式，不包含 MSVC 参数适配。输出、源码哈希和命令写入新建的系统临时目录。负向检查只修改临时副本，用故意引入的错误验证测试能失败。
+从本技能目录运行，或使用脚本绝对路径；脚本按自身位置查找示例。支持常见 GCC／Clang／TinyCC 命令形式，不包含 MSVC 参数适配。日志、源码哈希、命令、summary.json 和自动执行摘要 report.md 写入新建的系统临时目录。负向检查只修改临时副本，用故意引入的错误验证测试能失败。
 
 示例中的协议与超时参数是教学夹具，不是项目需求或芯片规范。不能把示例通过写成当前产品验证通过。
 
 ## 交付
 
 按“修改／测试对象、覆盖与故障模型、命令与结果、证据位置、目标构建结果、实板未验证项”说明结论。断言数不是设备数、场景数、无线成功率或固定验收门槛。主机逻辑、原工具链构建、目标仿真与实板证据分别报告。
+
+日常迭代可只保留机器记录；功能完成、版本交付或用户要求时生成适度的可阅读报告。自动摘要不推断需求全覆盖、无遗留缺陷或发布许可，正式报告的需求对应、限制和验收建议由人工确认。
 
 与六阶段流程配合时，由流程的 Plan 阶段确定是否需要及覆盖范围，Verify 阶段检查证据；本技能提供测试方法，不额外增加与任务无关的审批或发布动作。
