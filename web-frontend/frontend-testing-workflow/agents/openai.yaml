@@ -1,0 +1,7 @@
+interface:
+  display_name: "前端测试与验证工作流"
+  short_description: "为 Vue 3 + TS 前端抽离纯逻辑、编写 Vitest 单测并执行分层验证"
+  default_prompt: "使用 $frontend-testing-workflow 先抽离或定位可测逻辑，按正常/边界/异常路径补齐 Vitest 单元测试，并执行静态、类型与链路分层验证。"
+
+policy:
+  allow_implicit_invocation: true
