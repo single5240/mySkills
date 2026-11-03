@@ -8,7 +8,7 @@
 
 $ErrorActionPreference = "Stop"
 $RepoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
-$Categories = @("common", "mcu-baremetal", "rtos", "linux-driver", "protocols-debug")
+$Categories = @("common", "web-frontend", "backend-service", "mcu-baremetal", "rtos", "linux-driver", "protocols-debug")
 
 $TargetToolDirs = @(
     (Join-Path $env:USERPROFILE ".codex\skills"),

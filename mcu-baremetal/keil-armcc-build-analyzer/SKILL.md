@@ -9,7 +9,7 @@ description: >-
 
 ## 1. 适用范围与背景 (Metadata)
 
-- **技术方向**：`common`
+- **技术方向**：`mcu-baremetal`
 - **使用范围 (Scope)**：`global`（适用于所有使用 Keil MDK-ARM `.uvprojx` / `.uvproj` 的 MCU 工程）
 - **适用工具链**：Keil $\mu$Vision (`UV4.exe`)，ARM Compiler 5 (`armcc` V5.06) 与 ARM Compiler 6 (`armclang`)。
 

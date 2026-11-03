@@ -5,6 +5,14 @@
       "exclude": ["exp-.*"]
     },
     {
+      "path": "web-frontend",
+      "exclude": ["exp-.*"]
+    },
+    {
+      "path": "backend-service",
+      "exclude": ["exp-.*"]
+    },
+    {
       "path": "mcu-baremetal",
       "exclude": ["exp-.*"]
     },

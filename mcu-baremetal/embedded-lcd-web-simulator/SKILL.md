@@ -9,7 +9,7 @@ description: >-
 
 ## 1. 适用范围与背景 (Metadata)
 
-- **技术方向**：`common`
+- **技术方向**：`mcu-baremetal`
 - **使用范围 (Scope)**：`global`（全嵌入式通用，提炼自 QW-603 数显拉力计 `html/` 互动演示工程）
 - **交付形态**：纯静态 `html/` 目录（双击 `index.html` 直接以 `file://` 运行，零后端服务器依赖），独立于 Keil `.uvprojx` 编译目标。
 

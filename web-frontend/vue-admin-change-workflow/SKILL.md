@@ -8,7 +8,7 @@ description: >-
 
 # Vue 管理后台改动工作流
 
-技术方向：`common`；使用范围：`global`。适合 Vue 3、TypeScript、Vite 管理端，包括 Element Plus / Pinia / Vue Router 及 RuoYi / plus-ui 派生工程。先确认真实技术栈，不向其他工程强加这些依赖或目录。
+技术方向：`web-frontend`；使用范围：`global`。适合 Vue 3、TypeScript、Vite 管理端，包括 Element Plus / Pinia / Vue Router 及 RuoYi / plus-ui 派生工程。先确认真实技术栈，不向其他工程强加这些依赖或目录。
 
 ## 建立最小充分的工程模型
 
