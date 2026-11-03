@@ -1,0 +1,7 @@
+interface:
+  display_name: 'Vue 管理后台改动工作流'
+  short_description: '按风险处理 Vue 管理端改动、异步状态、接口权限和验证交付'
+  default_prompt: '使用 $vue-admin-change-workflow，先核对目标工程与真实调用路径，再按风险完成最小修改及验证，明确未验证项。'
+
+policy:
+  allow_implicit_invocation: true
