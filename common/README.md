@@ -19,6 +19,7 @@
 | :--- | :--- | :--- |
 | [`decision-notes`](./decision-notes/SKILL.md) | `global` | 精简记录有长期价值的技术决策：先查旧记录，保留约束、真实备选、代价与验证依据，沿用项目文档结构 |
 | [`embedded-six-stage-workflow`](./embedded-six-stage-workflow/SKILL.md) | `global` | 嵌入式固件六阶段门禁与高风险检查；含最小实现、校验归属、资源和交付约束 |
+| [`spring-backend-change-workflow`](./spring-backend-change-workflow/SKILL.md) | `global` | Spring 多模块后端的根因定位、最小变更与证据验证；按需检查事务/Redis、异步与 MQTT，附公开技能参考和正反触发评估用例 |
 | [`vue-admin-change-workflow`](./vue-admin-change-workflow/SKILL.md) | `global` | Vue 3 管理端的根因定位、异步状态与接口权限检查、风险分级及验证交付；沿用项目 CRUD 技能，附公开来源取舍及行为评估场景 |
 | [`agents-md-quality-constraints`](./agents-md-quality-constraints/SKILL.md) | `global` | 审查/精简 AGENTS.md，保留不变量、风险升级与验证入口；支持提炼规则到 Skill 并保留项目事实 |
 | [`keil-armcc-build-analyzer`](./keil-armcc-build-analyzer/SKILL.md) | `global` | Keil MDK (`UV4.exe` / ARMCC 5) 命令行无头构建、`.build_log.htm` 警告分类审查与 `.map` 资源占用 (`Code/RO/RW/ZI`) 自动对比分析 |
