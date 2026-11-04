@@ -21,6 +21,7 @@
 
 | Skill 目录名 | 使用范围 (Scope) | 简述 |
 | :--- | :--- | :--- |
+| [`grill-me`](./grill-me/SKILL.md) | `global` | 中文逐题追问技术方案或自测代码理解，按嵌入式与 Web 数据链路检查取舍、边界及验证依据 |
 | [`agents-md-quality-constraints`](./agents-md-quality-constraints/SKILL.md) | `global` | 审查/精简 AGENTS.md，保留不变量、风险升级与验证入口；支持提炼规则到 Skill 并保留项目事实 |
 | [`decision-notes`](./decision-notes/SKILL.md) | `global` | 精简记录有长期价值的技术决策：先查旧记录，保留约束、真实备选、代价与验证依据，沿用项目文档结构 |
 | [`answer-me-with-html`](./answer-me-with-html/SKILL.md) | `global` | 借助 `am.mjs` 将复杂架构、通信协议时序、状态机或方案对比渲染为单页交互式 HTML 图解看板或解说视频 |

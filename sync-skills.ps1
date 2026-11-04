@@ -41,24 +41,26 @@ foreach ($cat in $Categories) {
             $linkPath = Join-Path $targetRoot $skillName
             $needsCreate = $true
 
-            if (Test-Path $linkPath) {
-                $item = Get-Item $linkPath -Force
+            $item = Get-Item -LiteralPath $linkPath -Force -ErrorAction SilentlyContinue
+            if ($null -ne $item) {
                 if ($item.Attributes -band [System.IO.FileAttributes]::ReparsePoint) {
                     $existingTarget = ($item.Target | Select-Object -First 1)
                     if ($existingTarget -and ($existingTarget.TrimEnd('\') -ieq $sourcePath.TrimEnd('\'))) {
                         $needsCreate = $false
                     } else {
-                        cmd /c rmdir "$linkPath" | Out-Null
-                        Start-Sleep -Milliseconds 150
+                        # Delete only the junction itself, including a dangling junction.
+                        if ($item.LinkType -ne 'Junction') {
+                            throw "Refusing to replace non-junction link: $linkPath"
+                        }
+                        [System.IO.Directory]::Delete($item.FullName)
                     }
                 } else {
-                    Remove-Item -Path $linkPath -Recurse -Force
-                    Start-Sleep -Milliseconds 200
+                    throw "Refusing to replace ordinary directory or file: $linkPath"
                 }
             }
 
             if ($needsCreate) {
-                cmd /c mklink /J "$linkPath" "$sourcePath" | Out-Null
+                New-Item -ItemType Junction -Path $linkPath -Target $sourcePath | Out-Null
             }
         }
 
