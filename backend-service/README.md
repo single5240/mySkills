@@ -16,3 +16,4 @@
 | Skill 目录名 | 使用范围 (Scope) | 适用技术栈 | 简述 |
 | :--- | :--- | :--- | :--- |
 | [`spring-backend-change-workflow`](./spring-backend-change-workflow/SKILL.md) | `global` | Spring Boot / Java / Redis / MQTT | Spring 后端根因定位、最小变更与证据验证；涵盖事务/Redis、异步、MQTT、提交分组与推送二次确认，附公开来源及行为评估用例 |
+| [`proj-dorta-local-mqtt-test`](./proj-dorta-local-mqtt-test/SKILL.md) | `project` | Dorta / Vue / Spring Boot / MQTT | 本地前后端启动、限定设备 MQTT 模拟、少量测试记录及删除/清零/SSE 链路验证 |

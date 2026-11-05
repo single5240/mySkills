@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Dorta 本地 MQTT 联调'
+  short_description: '启动本地前后端、模拟限定设备并核验使用记录删除与清零应答链路'
+  default_prompt: '使用 $proj-dorta-local-mqtt-test，为本次修改核实本地环境，模拟我指定的设备并分层验证删除、清零及通知链路。'
